@@ -96,3 +96,33 @@ Example: Adding dice from different sources.
 ```
 
 In this case it is up to the adder to sync the two streams and add back pressure as needed.
+
+## Example use cases
+
+### Fetch and process images from a twitter search
+
+```
+Twitter stream  (1 process)
+ |
+Download        (2 processes)
+ |
+ImageMagick     (4 processes)
+ |
+Upload          (2 processes)
+```
+
+### Hub
+
+```
+Hub (producer with broadcast)
+ |
+Multiple subscribers (consumers)
+```
+
+### Interface for external queue
+
+```
+Queue client
+ |
+One consumer per channel
+```
