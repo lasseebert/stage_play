@@ -2,6 +2,8 @@
 
 Like a pipe operator (`|>`), but for processes and with back pressure and on coke.
 
+![awesome](https://github.com/lasseebert/stage_play/blob/master/awesomeness.jpg)
+
 So what is this back-pressure? In short it is "pull" and not "push".
 
 ## Can I haz some codez?
